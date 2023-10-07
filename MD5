@@ -1,6 +1,6 @@
-de72e30e2e2faf7806dafe4c3f54ab11 *DESCRIPTION
+ed9f78e97a97b08b52bbdc6ebe668c3e *DESCRIPTION
 f29c90ee8982b3e345250241320c6d3c *NAMESPACE
-1f83403e57210aa15deef7a53e80b87a *NEWS.md
+e6245950b2b4f2d370dfd7312f6128da *NEWS.md
 482583ee6c54549d7ceb4a5e5511067e *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
 56c07fb2dba0b451c9527a7146d52fc6 *R/driver_log.R
@@ -27,14 +27,14 @@ b8fd8e9d958a58821ae67b04e44d1295 *man/read_adbc.Rd
 3e7adb0f972e57086148c135922b7dca *man/with_adbc.Rd
 de53d0db489fd39d151f00aafac7a0e5 *src/Makevars
 35d345fa91749a24c11d8d1ec9498f61 *src/adbc.h
-49cdd3e507164d7e89a7b5bea3db491e *src/adbc_driver_manager.cc
+e7073d422b41b1f7385d6dfea8d612ef *src/adbc_driver_manager.cc
 68786af6827e03df8fd2c21eb599729f *src/adbc_driver_manager.h
-ff2b1ffb4c941bd5ec922ab65a1888ec *src/driver_log.c
-902ba9b8bda25dc3901d2993c66708a7 *src/driver_monkey.c
-ed535f25c4b21651341ba7ae0d398b1b *src/driver_void.c
+0adf66b42501d6d8c846aaa6e52262e7 *src/driver_log.c
+646ccd140fe066680a8275a1766e64f0 *src/driver_monkey.c
+99aeca8d63e25b01509167abac717bda *src/driver_void.c
 45066c4d18ca9c765332f46e2713e0b4 *src/error.cc
 984680573c3e732c7fbec99d740033ec *src/init.c
-0940ae0167e8e54369bbb0d4ee2058cf *src/radbc.cc
+f66610e12b45166f47a46838327a9285 *src/radbc.cc
 c76e4f41196b493e436b994b79ecfa0e *src/radbc.h
 db10b2260038bb64208dd1b39a21ec4d *src/utils.c
 2b68e861304b6f8683fee0ba50d6c726 *tests/testthat.R
@@ -46,5 +46,5 @@ f7772e078d05f802c5e7fd8f0136fce2 *tests/testthat/test-driver_monkey.R
 b9fad5bf941eca9d88daf021c3079169 *tests/testthat/test-error.R
 53db49d378f0fed2ec0e9639ea0fdb99 *tests/testthat/test-helpers.R
 255e5d4d077b12f4807ab417a664b47f *tests/testthat/test-radbc.R
-1a335ba8f0c2b6cfee7bdad065bbcb03 *tests/testthat/test-utils.R
+594845fb1f123f95c99fcf22005359b3 *tests/testthat/test-utils.R
 fd8160083b735ed0bfb53f4a5d7209cd *tools/make-callentries.R

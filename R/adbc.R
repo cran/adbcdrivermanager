@@ -70,6 +70,8 @@ adbc_database_init_default <- function(driver, options = NULL, subclass = charac
 #' @rdname adbc_database_init
 #' @export
 adbc_database_release <- function(database) {
+  stop_for_nonzero_child_count(database)
+
   error <- adbc_allocate_error()
   status <- .Call(RAdbcDatabaseRelease, database, error)
   stop_for_error(status, error)
@@ -119,6 +121,8 @@ adbc_connection_init_default <- function(database, options = NULL, subclass = ch
 #' @rdname adbc_connection_init
 #' @export
 adbc_connection_release <- function(connection) {
+  stop_for_nonzero_child_count(connection)
+
   if (isTRUE(connection$.release_database)) {
     database <- connection$database
     on.exit(adbc_database_release(database))
@@ -137,8 +141,9 @@ adbc_connection_release <- function(connection) {
 #' @param info_codes A list of metadata codes to fetch, or NULL to fetch all.
 #'   Valid values are documented in the adbc.h header.
 #' @param depth The level of nesting to display. If 0, display all levels. If 1,
-#'   display only catalogs (i.e. catalog_schemas will be null). If 2, display
-#'   only catalogs and schemas (i.e. db_schema_tables will be null), and so on.
+#'   display only catalogs (i.e., catalog_schemas will be null). If 2, display
+#'   only catalogs and schemas (i.e., db_schema_tables will be null). If 3,
+#'   display only catalogs, schemas, and tables.
 #' @param catalog Only show tables in the given catalog. If NULL, do not filter
 #'   by catalog. If an empty string, only show tables without a catalog. May be
 #'   a search pattern.
@@ -187,7 +192,7 @@ adbc_connection_get_info <- function(connection, info_codes = NULL) {
   )
   stop_for_error(status, error)
 
-  out_stream
+  adbc_child_stream(connection, out_stream)
 }
 
 #' @rdname adbc_connection_get_info
@@ -210,7 +215,7 @@ adbc_connection_get_objects <- function(connection, depth = 0L, catalog = NULL, 
   )
   stop_for_error(status, error)
 
-  out_stream
+  adbc_child_stream(connection, out_stream)
 }
 
 #' @rdname adbc_connection_get_info
@@ -240,7 +245,7 @@ adbc_connection_get_table_types <- function(connection) {
   status <- .Call(RAdbcConnectionGetTableTypes, connection, out_stream, error)
   stop_for_error(status, error)
 
-  out_stream
+  adbc_child_stream(connection, out_stream)
 }
 
 #' @rdname adbc_connection_get_info
@@ -257,7 +262,7 @@ adbc_connection_read_partition <- function(connection, serialized_partition) {
   )
   stop_for_error(status, error)
 
-  out_stream
+  adbc_child_stream(connection, out_stream)
 }
 
 #' @rdname adbc_connection_get_info
@@ -296,7 +301,7 @@ adbc_connection_get_statistic_names <- function(connection) {
   status <- .Call(RAdbcConnectionGetStatisticNames, connection, out_stream, error)
   stop_for_error(status, error)
 
-  out_stream
+  adbc_child_stream(connection, out_stream)
 }
 
 #' @rdname adbc_connection_get_info
@@ -318,7 +323,7 @@ adbc_connection_get_statistics <- function(connection, catalog, db_schema,
   )
   stop_for_error(status, error)
 
-  out_stream
+  adbc_child_stream(connection, out_stream)
 }
 
 #' @rdname adbc_connection_get_info
@@ -383,6 +388,8 @@ adbc_statement_init_default <- function(connection, options = NULL, subclass = c
 #' @rdname adbc_statement_init
 #' @export
 adbc_statement_release <- function(statement) {
+  stop_for_nonzero_child_count(statement)
+
   if (isTRUE(statement$.release_connection)) {
     connection <- statement$connection
     on.exit(adbc_connection_release(connection))
@@ -406,6 +413,8 @@ adbc_statement_release <- function(statement) {
 #'   or object that can be coerced to one.
 #' @param schema A [nanoarrow_schema][nanoarrow::as_nanoarrow_schema] or object
 #'   that can be coerced to one.
+#' @param stream_join_parent Use `TRUE` to invalidate `statement` and tie its
+#'   lifecycle to `stream`.
 #'
 #' @return
 #'   - `adbc_statement_set_sql_query()`, `adbc_statement_set_substrait_plan()`,
@@ -482,9 +491,25 @@ adbc_statement_bind_stream <- function(statement, stream, schema = NULL) {
 
 #' @rdname adbc_statement_set_sql_query
 #' @export
-adbc_statement_execute_query <- function(statement, stream = NULL) {
+adbc_statement_execute_query <- function(statement, stream = NULL,
+                                         stream_join_parent = FALSE) {
   error <- adbc_allocate_error()
-  result <- .Call(RAdbcStatementExecuteQuery, statement, stream, error)
+
+  if (is.null(stream)) {
+    result <- .Call(RAdbcStatementExecuteQuery, statement, NULL, error)
+  } else {
+    stream_tmp <- nanoarrow::nanoarrow_allocate_array_stream()
+    result <- .Call(RAdbcStatementExecuteQuery, statement, stream_tmp, error)
+    if (identical(result$status, 0L)) {
+      stream_tmp <- adbc_child_stream(
+        statement,
+        stream_tmp,
+        release_parent = stream_join_parent
+      )
+      nanoarrow::nanoarrow_pointer_export(stream_tmp, stream)
+    }
+  }
+
   stop_for_error(result$status, error)
   result$rows_affected
 }

@@ -1,6 +1,6 @@
-2eab1f818310691df5919e241d5c1e22 *DESCRIPTION
+ef5b0207143403771d7f11095382ba5d *DESCRIPTION
 199d42825e4dc9e3eb6126d4d5e1b998 *NAMESPACE
-9193ceb8f718400bfe2a1f7a670841ec *NEWS.md
+df81dc241bf8fc452d15424a5adbd662 *NEWS.md
 175d5d4ddf8bb3f75c275b5b477bd88a *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
 56c07fb2dba0b451c9527a7146d52fc6 *R/driver_log.R
@@ -24,7 +24,7 @@ ac432c4a985532c418da16bd4afa8a3c *man/adbc_driver_monkey.Rd
 a417374f9f18ba4090b752d518cedf45 *man/adbc_statement_init.Rd
 223fcb66586dbdb2ea7256f29714f68d *man/adbc_statement_set_sql_query.Rd
 42628471ba5d1d9da8cda18c86e64158 *man/adbc_xptr_move.Rd
-31034ab265e6f96b58f2f8823f97fac6 *man/adbcdrivermanager-package.Rd
+0ee1dfd59c86faf679f8caddde0634de *man/adbcdrivermanager-package.Rd
 b8fd8e9d958a58821ae67b04e44d1295 *man/read_adbc.Rd
 3d8e5de7afded4c720d0a2b7e6ca3e20 *man/with_adbc.Rd
 de53d0db489fd39d151f00aafac7a0e5 *src/Makevars

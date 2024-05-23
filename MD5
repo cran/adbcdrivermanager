@@ -1,4 +1,4 @@
-93fa7b731707e46d79e00bd2154d502b *DESCRIPTION
+1b2ce5d4639804ff62bd7d9b7a0fd9db *DESCRIPTION
 199d42825e4dc9e3eb6126d4d5e1b998 *NAMESPACE
 175d5d4ddf8bb3f75c275b5b477bd88a *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
@@ -9,7 +9,7 @@ fcd0bdce6d1723f25883f5966234e4e3 *R/driver_void.R
 57c6282190eebb68feba6b255065a792 *R/helpers.R
 f730b2d5bd8c4d0c39f67bc1e2c1308c *R/options.R
 a129e19c2d41f59f83c37e9c70c65205 *R/utils.R
-e4c6e4662440320143b547622713958c *README.md
+dec502267ccd456befa345e96ead120a *README.md
 46dc42aa59458853f0a042cdef9cc699 *configure
 d8b3e9c52c24ff34bd0f06cbe475812d *configure.win
 a4220180118aa959b6910c943d479d61 *man/adbc_connection_get_info.Rd
@@ -26,8 +26,8 @@ a417374f9f18ba4090b752d518cedf45 *man/adbc_statement_init.Rd
 0ee1dfd59c86faf679f8caddde0634de *man/adbcdrivermanager-package.Rd
 b8fd8e9d958a58821ae67b04e44d1295 *man/read_adbc.Rd
 3d8e5de7afded4c720d0a2b7e6ca3e20 *man/with_adbc.Rd
-de53d0db489fd39d151f00aafac7a0e5 *src/Makevars
-35d345fa91749a24c11d8d1ec9498f61 *src/adbc.h
+055d5ff1c3fcb0435026a5fee4e9ea54 *src/Makevars
+f25f3b0127044dd2b265f464f27621dc *src/adbc.h
 c65c40b0e9e0b8ef3ce307e23a0e3aac *src/adbc_driver_manager.cc
 68786af6827e03df8fd2c21eb599729f *src/adbc_driver_manager.h
 f6e0b3fe141b8fc7e43a1d8cafea562a *src/driver_base.h

@@ -1,6 +1,6 @@
 Package: adbcdrivermanager
 Title: 'Arrow' Database Connectivity ('ADBC') Driver Manager
-Version: 0.12.0
+Version: 0.13.0
 Authors@R: c(
       person("Dewey", "Dunnington", , "dewey@dunnington.ca", role = c("aut", "cre"),
              comment = c(ORCID = "0000-0002-9415-4582")),
@@ -14,7 +14,7 @@ Description: Provides a developer-facing interface to 'Arrow' Database
   libraries that uses 'Arrow' for result sets and query parameters.
 License: Apache License (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Suggests: testthat (>= 3.0.0), withr
 Config/testthat/edition: 3
 Config/build/bootstrap: TRUE
@@ -23,10 +23,10 @@ URL: https://github.com/apache/arrow-adbc,
 BugReports: https://github.com/apache/arrow-adbc/issues
 Imports: nanoarrow (>= 0.3.0)
 NeedsCompilation: yes
-Packaged: 2024-05-23 01:46:29 UTC; deweydunnington
+Packaged: 2024-07-09 03:18:35 UTC; deweydunnington
 Author: Dewey Dunnington [aut, cre] (<https://orcid.org/0000-0002-9415-4582>),
   Apache Arrow [aut, cph],
   Apache Software Foundation [cph]
 Maintainer: Dewey Dunnington <dewey@dunnington.ca>
 Repository: CRAN
-Date/Publication: 2024-05-23 02:50:05 UTC
+Date/Publication: 2024-07-09 04:10:02 UTC

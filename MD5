@@ -1,4 +1,4 @@
-1b2ce5d4639804ff62bd7d9b7a0fd9db *DESCRIPTION
+11803fbf2eec1ef4e6d0ca8a0685576d *DESCRIPTION
 199d42825e4dc9e3eb6126d4d5e1b998 *NAMESPACE
 175d5d4ddf8bb3f75c275b5b477bd88a *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
@@ -6,7 +6,7 @@
 c880f9b78c395d6b096f96da294a3829 *R/driver_monkey.R
 fcd0bdce6d1723f25883f5966234e4e3 *R/driver_void.R
 73015a8f28ad135859032d5c841f8a06 *R/error.R
-57c6282190eebb68feba6b255065a792 *R/helpers.R
+ffd5622b2c745c43c1b598d24f6a9dd5 *R/helpers.R
 f730b2d5bd8c4d0c39f67bc1e2c1308c *R/options.R
 a129e19c2d41f59f83c37e9c70c65205 *R/utils.R
 dec502267ccd456befa345e96ead120a *README.md
@@ -24,7 +24,7 @@ a417374f9f18ba4090b752d518cedf45 *man/adbc_statement_init.Rd
 223fcb66586dbdb2ea7256f29714f68d *man/adbc_statement_set_sql_query.Rd
 42628471ba5d1d9da8cda18c86e64158 *man/adbc_xptr_move.Rd
 0ee1dfd59c86faf679f8caddde0634de *man/adbcdrivermanager-package.Rd
-b8fd8e9d958a58821ae67b04e44d1295 *man/read_adbc.Rd
+e18b736535e19a373e39470bc310055e *man/read_adbc.Rd
 3d8e5de7afded4c720d0a2b7e6ca3e20 *man/with_adbc.Rd
 055d5ff1c3fcb0435026a5fee4e9ea54 *src/Makevars
 f25f3b0127044dd2b265f464f27621dc *src/adbc.h
@@ -35,7 +35,7 @@ df9513c4f4cdeb3194fbd6b6e53ac27d *src/driver_test.cc
 63f4dbe4ac8378a24d5a5eae9e15740c *src/error.cc
 3bbf4b7cc945596c8a5225d965b91097 *src/init.c
 9cf096a42187f69e3055b2126607e158 *src/options.cc
-7b0186e1d0b45d94707fdbd3adddbc33 *src/radbc.cc
+47c8bc8bce348508c268b985cdee8556 *src/radbc.cc
 e2fca13bbf5c67149339538136c23b7e *src/radbc.h
 6777db817046bafa8026a0c7acb0ed65 *src/utils.c
 2b68e861304b6f8683fee0ba50d6c726 *tests/testthat.R

@@ -1,4 +1,4 @@
-38264c0b2443cf13bcacf2eb7512f194 *DESCRIPTION
+32e9305359e9cdead267f94285c5c08d *DESCRIPTION
 6c315986199bac5176c53f681c10408d *NAMESPACE
 27c576e254def1e5cf3664b43fadc8fb *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
@@ -70,7 +70,7 @@ ac914104eb53b3598ac3776d3b91125e *src/c/driver/sqlite/statement_reader.h
 27e5401ff385daf212f197cc58db6867 *src/c/driver_manager/adbc_driver_manager.cc
 bb6e52bddcb8812c960b066e578c33ef *src/c/driver_manager/adbc_version_100.c
 1b177a2dc3510a5fa9d8580ba86d82ec *src/c/driver_manager/adbc_version_100.h
-d321fb9e2111ccb0974a320ce42cac5b *src/c/driver_manager/current_arch.h
+f3165caadccefe3c9a68cc5fd043ea15 *src/c/driver_manager/current_arch.h
 565cb536bbdc834c5e2f60e5c10ce76e *src/c/include/adbc.h
 e68232a2ff887cba98d781d15d257799 *src/c/include/adbc_driver_manager.h
 c9f83c64acd72801e3ed0eb4ac9af6e2 *src/c/include/arrow-adbc/adbc.h

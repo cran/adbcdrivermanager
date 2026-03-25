@@ -1,4 +1,4 @@
-56dbb1f082bd5e6d1affd95484252395 *DESCRIPTION
+c341d7dc75f5924afa6246a4132a7459 *DESCRIPTION
 6c315986199bac5176c53f681c10408d *NAMESPACE
 27c576e254def1e5cf3664b43fadc8fb *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
@@ -116,7 +116,7 @@ c94b70180a1f87ea61285986878dc016 *src/driver_test.cc
 b5cae3c9177d7250820de7cd97ee77a0 *src/error.cc
 5c1bf479aeebf2f255bf8ab98e8aacd1 *src/init.c
 8969a86420cbc2befdb7ce50dbe1ed8b *src/options.cc
-3b0a5f20711f6472f651a6fa608ec381 *src/radbc.cc
+6065998570bf03c3301d77771a3c2dd5 *src/radbc.cc
 10489ae1f8208d7296ba1ea007777a2a *src/radbc.h
 6777db817046bafa8026a0c7acb0ed65 *src/utils.c
 2b68e861304b6f8683fee0ba50d6c726 *tests/testthat.R

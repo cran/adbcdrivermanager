@@ -1,4 +1,4 @@
-00276a933c583a56d3b767f7cc2b28cc *DESCRIPTION
+df92654f04be5e310a19f1f9faaa238e *DESCRIPTION
 6c315986199bac5176c53f681c10408d *NAMESPACE
 27c576e254def1e5cf3664b43fadc8fb *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
@@ -112,7 +112,7 @@ c3a98b32d5fc6d71f4c45d96af829b68 *src/c/vendor/fmt/src/fmt.cc
 5c07d1da62794a79eaa25135c9aefd77 *src/c/vendor/fmt/src/format.cc
 9b90e961488430bd5c777d08c7d2ed09 *src/c/vendor/fmt/src/os.cc
 a5702fe59a9ea93fee105c4172a732dd *src/c/vendor/nanoarrow/nanoarrow.c
-db6352c25a40eb1cf5c5936df14a9c2f *src/c/vendor/nanoarrow/nanoarrow.h
+68c0f0e08e96e92fa35a9b931d7cfeef *src/c/vendor/nanoarrow/nanoarrow.h
 fc432022a975304d703a9f2365021eec *src/c/vendor/nanoarrow/nanoarrow.hpp
 2b632d6fd90ba3b317c93dbd85d45390 *src/c/vendor/portable-snippets/include/portable-snippets/safe-math.h
 e716b3078f3d6c6627e24627353b0c11 *src/c/vendor/toml++/toml.hpp

@@ -1,4 +1,4 @@
-fb054e5ca12cfc396e541a80c64a1f33 *DESCRIPTION
+b0d140e527eb627ef105b04408924d93 *DESCRIPTION
 a05282575e64cd8ff7f38e1e06a549b2 *NAMESPACE
 4a269205c64c7d0f32230afed21e72a7 *R/adbc.R
 09023a48fb65ff800cb952bcd3e75884 *R/adbcdrivermanager-package.R
@@ -71,7 +71,7 @@ a2d8b4868ffe4cf5caa9efe59c382b91 *src/c/driver_manager/adbc_driver_manager.cc
 6155854bf26fa7582b4115ea009f6eb5 *src/c/driver_manager/adbc_driver_manager_api.cc
 eeb804193d5947bad8db955c48ac0649 *src/c/driver_manager/adbc_driver_manager_driver_loading.cc
 9cdb6156f15707c147d708c9d79fa560 *src/c/driver_manager/adbc_driver_manager_internal.h
-7792bae9359bf314aeb511e4874a3e0e *src/c/driver_manager/adbc_driver_manager_profiles.cc
+9cf08640416279a8f526a10ea8084542 *src/c/driver_manager/adbc_driver_manager_profiles.cc
 bb6e52bddcb8812c960b066e578c33ef *src/c/driver_manager/adbc_version_100.c
 1b177a2dc3510a5fa9d8580ba86d82ec *src/c/driver_manager/adbc_version_100.h
 e73d1257c347ed1253a056aee2af0d2a *src/c/driver_manager/current_arch.h
@@ -109,9 +109,9 @@ ff6c49d2667b46de866a2ab3a95d537e *src/c/vendor/fmt/include/fmt/std.h
 c3a98b32d5fc6d71f4c45d96af829b68 *src/c/vendor/fmt/src/fmt.cc
 5c07d1da62794a79eaa25135c9aefd77 *src/c/vendor/fmt/src/format.cc
 9b90e961488430bd5c777d08c7d2ed09 *src/c/vendor/fmt/src/os.cc
-a5702fe59a9ea93fee105c4172a732dd *src/c/vendor/nanoarrow/nanoarrow.c
-68c0f0e08e96e92fa35a9b931d7cfeef *src/c/vendor/nanoarrow/nanoarrow.h
-fc432022a975304d703a9f2365021eec *src/c/vendor/nanoarrow/nanoarrow.hpp
+0d925481ccd35e5f8ef37cbc4fa5c8e7 *src/c/vendor/nanoarrow/nanoarrow.c
+5ec67c8131b539e693dc917b31ba09fc *src/c/vendor/nanoarrow/nanoarrow.h
+d111686f32ce3740b37aeb4afb557140 *src/c/vendor/nanoarrow/nanoarrow.hpp
 2b632d6fd90ba3b317c93dbd85d45390 *src/c/vendor/portable-snippets/include/portable-snippets/safe-math.h
 3a7ccf968e08c226577dc9ad532061ba *src/c/vendor/toml++/toml.hpp
 c94b70180a1f87ea61285986878dc016 *src/driver_test.cc
